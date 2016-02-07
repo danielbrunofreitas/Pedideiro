@@ -107,7 +107,8 @@ var PedideiroManager = {
         .error(function (error) {
 
             if (error.status == 401) {
-                window.location.href = '#index';
+
+                this.logoffUsuario();
             }
 
 
