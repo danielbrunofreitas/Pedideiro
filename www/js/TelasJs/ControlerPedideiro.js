@@ -3,6 +3,11 @@
 
 var PedideiroManager = {
 
+    incializar: function(){
+
+
+    },
+
     basePath: function () { return 'http://localhost:64817/api'; },
 
     loginUsuario : function(){
@@ -92,7 +97,7 @@ var PedideiroManager = {
                
                 $("#lista_fornecedores").append(
                         " <li>" +
-                        " <a href='#fornecedorProdutos?idFornecedor="+item.id+"data-transition='slide'>" +
+                        " <a href='#fornecedorProdutos' data-transition='slide'>" +
                         " <i class='flaticon-transport643'></i>" +
                         " <div class='list-info'>" +
                         " <h3>"+item.Nome+"</h3>" +
@@ -264,5 +269,9 @@ var PedideiroManager = {
 
     }, // Carregar Mapa de Fornecedores.
 
+    carregarProdutos : function(id){
+
+
+    }
 
 }
